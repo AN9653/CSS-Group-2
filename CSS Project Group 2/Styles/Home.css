@@ -1,0 +1,129 @@
+/* All of this will be revised once I get a color scheme and a background image from Cambridge. I currently don't like the standard fonts either*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    background-image: url("../images/Black_hole.WEBP");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* optional: gives a nice effect */
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.95); /* slightly transparent */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-color: #0E7490;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 3em;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.2em;
+}
+
+nav {
+    background-color: #164E63;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a, .dropdown {
+    display: inline-block;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hidden menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0%;      /* THIS makes it go sideways */
+    top: 100%;
+    background-color: #164E63;
+    white-space: nowrap;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+    display: inline-block;   /* makes them horizontal */
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+    background-color: #0E7490;
+}
+
+nav a, 
+nav .dropdown {
+    display: inline-block;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Add divider to EVERYTHING except the first item */
+nav > * + * {
+    border-left: 2px solid #E2E8F0;
+    padding-left: 15px;
+}
+
+main {
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #0F172A;
+    text-align: center;
+}
+
+p {
+    border: 2px solid #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #334155;
+}
+
+footer {
+    background-color: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+}
