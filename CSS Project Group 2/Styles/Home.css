@@ -1,10 +1,7 @@
-/* All of this will be revised once I get a color scheme and a background image from Cambridge. I currently don't like the standard fonts either*/
-
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-   
-    background-image: url("../images/Black_hole.WEBP");
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/BlueSky_Clouds.WEBP");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* optional: gives a nice effect */
@@ -14,13 +11,13 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.95); /* slightly transparent */
+    background-color: rgba(248, 250, 252, 0.95); /* slightly transparent */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 header {
-    background-color: #0E7490;
-    color: white;
+    background-color: #0E4D64;
+    color: #F8FAFC;
     text-align: center;
     padding: 30px 15px;
     font-size: 3em;
@@ -33,13 +30,14 @@ header h1 {
 }
 
 nav {
-    background-color: #164E63;
+    font-size: 20px;
+    background-color: #1B6CA8;
     text-align: center;
     padding: 15px;
 }
 
 nav a {
-    color: white;
+    color: #F8FAFC;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -64,7 +62,7 @@ nav a, .dropdown {
     position: absolute;
     left: 0%;      /* THIS makes it go sideways */
     top: 100%;
-    background-color: #164E63;
+    background-color: #1B6CA8;
     white-space: nowrap;
 }
 
@@ -89,7 +87,7 @@ nav a, .dropdown {
 nav a, 
 nav .dropdown {
     display: inline-block;
-    color: white;
+    color: #E2E8F0;
     margin: 0 15px;
     font-weight: bold;
 }
@@ -101,12 +99,20 @@ nav > * + * {
 }
 
 main {
-    padding: 30px;
-    background-color: #FFFFFF;
+    padding: 20px;
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0F172A;
+    text-align: center;
 }
 
 h2 {
-    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     color: #0F172A;
     text-align: center;
 }
@@ -114,16 +120,23 @@ h2 {
 p {
     border: 2px solid #000000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     text-align: center;
     color: #334155;
 }
 
+table { text-align: center;
+}
+
+li { text-align: left; 
+}
+
 footer {
     background-color: #0F172A;
-    color: white;
+    color: #E2E8F0;
     text-align: center;
     padding: 15px;
     font-style: italic;
+    font-family: 'Montserrat', sans-serif;
 }
